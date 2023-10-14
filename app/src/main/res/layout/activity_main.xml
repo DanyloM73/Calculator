@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="10dp"
+        android:orientation="vertical"
+        android:background="@color/text_bg_color"
+        android:layout_weight="3.2">
+
+        <TextView
+            android:id="@+id/calcText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textSize="50sp"
+            android:textColor="@color/white"
+            tools:text="1 + 0 ="/>
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textSize="60sp"
+            android:textColor="@color/white"
+            android:text="0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_weight="6.8">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/delButton"
+                style="@style/ActButton"
+                android:text="@string/del_btn"
+                android:onClick="onDeleteClick"/>
+
+            <Button
+                style="@style/NumButton"
+                android:text="@string/nine_btn"
+                android:onClick="onDigitClick"/>
+
+            <Button
+                style="@style/NumButton"
+                android:text="@string/six_btn"
+                android:onClick="onDigitClick"/>
+
+            <Button
+                style="@style/NumButton"
+                android:text="@string/three_btn"
+                android:onClick="onDigitClick"/>
+
+            <Button
+                style="@style/NumButton"
+                android:text="@string/percent_btn"
+                android:onClick="onDigitClick"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                style="@style/ActButton"
+                android:text="@string/reverse_btn"
+                android:onClick="onDigitClick"/>
+
+            <Button
+                style="@style/NumButton"
+                android:text="@string/eight_btn"
+                android:onClick="onDigitClick"/>
+
+            <Button
+                style="@style/NumButton"
+                android:text="@string/five_btn"
+                android:onClick="onDigitClick"/>
+
+            <Button
+                style="@style/NumButton"
+                android:text="@string/two_btn"
+                android:onClick="onDigitClick"/>
+
+            <Button
+                style="@style/NumButton"
+                android:text="@string/zero_btn"
+                android:onClick="onDigitClick"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                style="@style/ActButton"
+                android:text="@string/power_btn"
+                android:onClick="onOperatorClick"/>
+
+            <Button
+                style="@style/NumButton"
+                android:text="@string/seven_btn"
+                android:onClick="onDigitClick"/>
+
+            <Button
+                style="@style/NumButton"
+                android:text="@string/four_btn"
+                android:onClick="onDigitClick"/>
+
+            <Button
+                style="@style/NumButton"
+                android:text="@string/one_btn"
+                android:onClick="onDigitClick"/>
+
+            <Button
+                style="@style/NumButton"
+                android:text="@string/dot_btn"
+                android:onClick="onDigitClick"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                style="@style/ActButton"
+                android:text="@string/plus_btn"
+                android:onClick="onOperatorClick"/>
+
+            <Button
+                style="@style/ActButton"
+                android:text="@string/minus_btn"
+                android:onClick="onOperatorClick"/>
+
+            <Button
+                style="@style/ActButton"
+                android:text="@string/multiply_btn"
+                android:onClick="onOperatorClick"/>
+
+            <Button
+                style="@style/ActButton"
+                android:text="@string/divide_btn"
+                android:onClick="onOperatorClick"/>
+
+            <Button
+                style="@style/ActButton"
+                android:text="@string/equals_btn"
+                android:onClick="onEqualsClick"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
