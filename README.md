@@ -1,4 +1,4 @@
-# AndroidCalculator
+# Calculator
 
 🖩 Simple calculator app for Android
 
